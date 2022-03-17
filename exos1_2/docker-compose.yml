@@ -7,9 +7,9 @@ services:
   postgres-server:
     image: "postgres:13"
     environment:
-      POSTGRES_USER: dej # The PostgreSQL user (useful to connect to the database)
-      POSTGRES_PASSWORD: dej # The PostgreSQL password (useful to connect to the database)
-      POSTGRES_DB: dej # The PostgreSQL default database (automatically created at first launch)
+      POSTGRES_USER: dej
+      POSTGRES_PASSWORD: dej
+      POSTGRES_DB: dej
 
   pgadmin-server:
     image: "dpage/pgadmin4"

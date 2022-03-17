@@ -27,9 +27,9 @@ services:
   postgres-server:
     image: "postgres:13"
     environment:
-      POSTGRES_USER: dej # The PostgreSQL user (useful to connect to the database)
-      POSTGRES_PASSWORD: dej # The PostgreSQL password (useful to connect to the database)
-      POSTGRES_DB: dej # The PostgreSQL default database (automatically created at first launch)
+      POSTGRES_USER: dej 
+      POSTGRES_PASSWORD: dej 
+      POSTGRES_DB: dej
 
   pgadmin-server:
     image: "dpage/pgadmin4"
@@ -53,6 +53,7 @@ connection = psycopg2.connect(user="dej",
 ## Exercise 2: Working with SQL
 
 To create the database I went on [dbdiagram.io](https://www.dbdiagram.io) to draw the entity relationship diagram and export the DDL in postgres.
+![ERD diagram](exos1_2/erd.png)
 So I could just execute the script in pgadmin:
 ```sql
 CREATE TABLE "persons" (
