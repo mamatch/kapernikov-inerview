@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# ide
+.idea
+
+# dataset
+exo3/export_wcant_L50A_A_40_0_42_0 .csv
